@@ -1,0 +1,5 @@
+THis algorithm is O(n) for counting the majority element in array.
+It uses a count which is incremented or decrement at each element in the array during traversal.
+if count reaches 0, a new element(current element during traversal) is assumed as majority and count is started from 1.
+Only a potential majority element if it exists survives at end.
+Then we use another for loop to check if it truly is majority.
