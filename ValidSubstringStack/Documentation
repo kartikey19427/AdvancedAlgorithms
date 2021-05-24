@@ -1,1 +1,2 @@
 Find the longest valid substring using stack in O(n) time complexity.
+This code does not contain a while loop nested in a for loop.
