@@ -167,3 +167,24 @@ public class BinaryTree {
         printpreorderutil(root);
         System.out.println("");
     }
+     public static void printlevelorderbetter(Node root){
+        LinkedList<Node> queue=new LinkedList<>();
+        queue.addLast(root);
+        int level=0;
+        while(!queue.isEmpty()){
+            int size=queue.size();
+            System.out.println("level:" +level);
+            level++;
+            for(int i=0;i<size;i++){
+                Node node=queue.removeFirst();
+                System.out.print(node.data+" ");
+                if(node.left!=null){
+                    queue.addLast(node.left);
+                }
+                if(node.right!=null) {
+                    queue.addLast(node.right);
+                }
+            }
+            System.out.println("");
+        }
+    }
